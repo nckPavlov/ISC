@@ -13,7 +13,7 @@
 
 </head>
 
-<body onload="includeHTML()">
+<body onload="init()">
 
   <div w3-include-html="./templates/header.html"></div>
 
@@ -21,16 +21,17 @@
 
   <div class="container-m1">
     <div class="h1-m1">
-      <h1>Reinigunsdienstleistungen</h1>
+      <h1 id="language-m2-1">Reinigunsdienstleistungen</h1>
     </div>
     <div class="text-m1">
-      <p>Ob Mitarbeiter, Kunden oder Geschäftspartner – in einem sauberen Ambiente fühlen sich alle <br> Menschen in
+      <p id="language-m2-2">
+        Ob Mitarbeiter, Kunden oder Geschäftspartner – in einem sauberen Ambiente fühlen sich alle Menschen in
         einem
-        Gebäude gleich viel wohler. <br> Die ISC UG haftungsbeschränkt bietet Ihnen eine nachhaltige und umweltschonende
-        <br> Reinigung aller Büroflächen, Treppenhäuser und Gebäuden zu einem verlässlichen Pauschalpreis an.
-      </p>
-      <br>
-      <p>Unsere Reinigungskräfte haben ihre Arbeit bereits erledigt, bevor Sie oder Ihre Mitarbeiter bereits morgens
+        Gebäude gleich viel wohler. Die ISC UG haftungsbeschränkt bietet Ihnen eine nachhaltige und umweltschonende
+        Reinigung aller Büroflächen, Treppenhäuser und Gebäuden zu einem verlässlichen Pauschalpreis an.
+
+
+        Unsere Reinigungskräfte haben ihre Arbeit bereits erledigt, bevor Sie oder Ihre Mitarbeiter bereits morgens
         früh die Türe Ihres Gebäudes öffnen.
       </p>
     </div>
@@ -41,8 +42,8 @@
     <div class="slider-m2">
       <div class="slide-m2 current-m2">
         <div class="content-m2">
-          <h1 id="language-h1-slider" class="h1-slider-m2">Fensterreinigung</h1>
-          <p id="language-p-slider" class="p-slider-m2">
+          <h1 id="language-m2-3" class="h1-slider-m2">Fensterreinigung</h1>
+          <p id="language-m2-4" class="p-slider-m2">
             schon ab 29€
           </p>
           <!--BUTTON-->
@@ -55,8 +56,8 @@
       </div>
       <div class="slide-m2">
         <div class="content-m2">
-          <h1 id="language-h1-slider1" class="h1-slider-m2">Treppenhausreinigung</h1>
-          <p id="language-p-slider1" class="p-slider-m2">
+          <h1 id="language-m2-5" class="h1-slider-m2">Treppenhausreinigung</h1>
+          <p id="language-m2-6" class="p-slider-m2">
             schon ab 39€
           </p>
           <!--BUTTON-->
@@ -68,8 +69,8 @@
       </div>
       <div class="slide-m2">
         <div class="content-m2">
-          <h1 id="language-h1-slider2" class="h1-slider-m2">Büroreinigung</h1>
-          <p id="language-p-slider2" class="p-slider-m2">
+          <h1 id="language-m2-7" class="h1-slider-m2">Büroreinigung</h1>
+          <p id="language-m2-8" class="p-slider-m2">
             schon ab 89€
           </p>
           <!--BUTTON-->
@@ -81,8 +82,8 @@
 
       <div class="slide-m2">
         <div class="content-m2">
-          <h1 id="language-h1-slider2" class="h1-slider-m2">Gebäudereinigung</h1>
-          <p id="language-p-slider2" class="p-slider-m2">
+          <h1 id="language-m2-9" class="h1-slider-m2">Gebäudereinigung</h1>
+          <p id="language-m2-10" class="p-slider-m2">
             schon ab 199€
           </p>
           <!--BUTTON-->
@@ -101,11 +102,11 @@
 
 
     <div style="margin-top: 120px; font-size: 45px;">
-      <h3 class="h3-m1">Unsere Angebot</h3>
+      <h3 id="language-m2-11" class="h3-m1">Unsere Angebot</h3>
     </div>
 
     <div class="text-container-m1">
-      <div class="div-container-m1">
+      <div id="language-m2-12" class="div-container-m1">
         <p class="p1-m1">→ Text Reinigungskräfte</p>
         <br>
         <p>
@@ -117,12 +118,13 @@
           Selbstverständlich kommen unsere Reinigungskräfte außerhalb der Bürozeiten zu Ihnen. Sie legen fest, wann und
           wie oft bei Ihnen gereinigt werden soll. Dabei setzen wir unsere Reinigungskräfte wann immer möglich als feste
           Teams ein – so sind sie bestens mit Ihren Räumlichkeiten vertraut und können besser auf Ihre individuellen
-          Wünsche eingehen. <br> Wenn Sie also zuverlässige und gewissenhafte Reinigungskräfte suchen, sind Sie bei uns genau
+          Wünsche eingehen. <br> Wenn Sie also zuverlässige und gewissenhafte Reinigungskräfte suchen, sind Sie bei uns
+          genau
           richtig!
         </p>
         <br>
         <p>Unsere Dienstleistungen:</p>
-        
+
         <li>Gebäudereinigung</li>
         <li>Fensterreinigung</li>
         <li>Praxisreinigung</li>
@@ -130,18 +132,21 @@
       </div>
 
 
-      <div class="div-container-m1">
+      <div id="language-m2-13" class="div-container-m1">
         <p class="p1-m1">→ Treppenhausreinigung</p>
         <br>
         <p>
           Treppenhausreinigung
           <br>
           Ein blitzblanker Flur und saubere Treppen sollten eine Selbstverständlichkeit sein – schließlich fungiert
-          dieser Bereich oft genug als Visitenkarte eines Unternehmens. <br> Ein tadelloses Treppenhaus vermittelt auch dem
-          Kunden, dass er sich in guten Händen befindet. <br> Und dieser erste Eindruck ist oft der wichtigste! Andererseits
+          dieser Bereich oft genug als Visitenkarte eines Unternehmens. <br> Ein tadelloses Treppenhaus vermittelt auch
+          dem
+          Kunden, dass er sich in guten Händen befindet. <br> Und dieser erste Eindruck ist oft der wichtigste!
+          Andererseits
           muss beachtet werden, dass das Treppenhaus zu den am stärksten frequentierten und somit beanspruchten
           Bereichen einer Firma zählt. Genau hier kommt unsere Treppenhausreinigung ins Spiel – unsere erfahrenen
-          Reinigungskräfte säubern gründlich und pünktlich Flure, selbstverständlich inklusive aller Zugangswege. <br> Auf
+          Reinigungskräfte säubern gründlich und pünktlich Flure, selbstverständlich inklusive aller Zugangswege. <br>
+          Auf
           der anderen Seite gehen wir der Sache auch gern tiefer auf den Grund und reinigen ihre Keller-, Wasch- und
           Trockenräume. <br> Zu unseren langjährigen zufriedenen Kunden zählen auch viele Genossenschaften und
           Hausverwaltungen – mit uns geht es also hoch hinaus!
@@ -161,7 +166,7 @@
   <div w3-include-html="./templates/footer.html"></div>
 
 
-  <script src="script1.js"></script>
+  <script src="script5.js"></script>
 
 </body>
 

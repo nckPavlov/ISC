@@ -467,11 +467,13 @@ h1 {
 .cleaner {
   width: 300px;
 }
-.h333{
+
+.h333 {
   font-size: 16px !important;
   color: rgb(138, 60, 50);
   text-shadow: 8px 8px 8px rgb(20, 20, 20);
 }
+
 .h33 {
   font-size: 18px !important;
   color: rgb(255, 255, 255);
@@ -595,7 +597,8 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.info-img1{
+
+.info-img1 {
   object-fit: contain;
   height: 350px;
   width: 300px;
@@ -671,7 +674,7 @@ h1 {
   padding-bottom: 10px;
 }
 
-.info-text2 {
+.info-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -706,49 +709,54 @@ h1 {
 }
 
 .nav-nav ul {
-  margin:0;padding:0;
-  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   float: left;
-  display:inline-block;
+  display: inline-block;
 }
 
 .nav-nav ul li {
-  position:relative;
-  margin:0 20px 0 0;
-  float:left;
-  display:inline-block;
+  position: relative;
+  margin: 0 20px 0 0;
+  float: left;
+  display: inline-block;
 }
 
-li > a:after { content: ' » '; }
+li>a:after {
+  content: ' » ';
+}
 
-li > a:only-child:after { content: ''; }
+li>a:only-child:after {
+  content: '';
+}
 
 .nav-nav ul li a {
-  padding:20px;
-  display:inline-block;
-  color:white;
-  text-decoration:none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-nav ul li a:hover {
-  opacity:0.5;
+  opacity: 0.5;
 }
 
 .nav-nav ul li ul {
-  display:none;
-  position:absolute;
-  left:0;
-  background:#014418;
-  float:left;
+  display: none;
+  position: absolute;
+  left: 0;
+  background: #014418;
+  float: left;
 }
 
 .nav-nav ul li ul li {
-  width:100%;
-  border-bottom:1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-nav ul li:hover ul {
-  display:block;
+  display: block;
 }
 
 
@@ -853,6 +861,7 @@ li > a:only-child:after { content: ''; }
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -866,6 +875,7 @@ li > a:only-child:after { content: ''; }
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -879,6 +889,7 @@ li > a:only-child:after { content: ''; }
     transform: translateY(50px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -890,6 +901,7 @@ li > a:only-child:after { content: ''; }
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -1500,6 +1512,7 @@ li > a:only-child:after { content: ''; }
   border-radius: 20px;
   background-color: rgb(20, 20, 20, 0.6);
   display: flex;
+  flex-wrap: wrap !important;
   justify-content: center;
   align-items: center;
 }
@@ -1565,8 +1578,6 @@ li > a:only-child:after { content: ''; }
 
 .contact-kontaktformular {
   background: url('./img/blackboard-business-woman-professional-suit-elegant-female-1454051-pxhere.com.jpg') no-repeat center top/cover;
-  
-  height: 100vh;
 }
 
 .contact-kontaktformular-div {
@@ -2131,15 +2142,21 @@ li > a:only-child:after { content: ''; }
 
 
 @media (max-width:992px) {
-.nav-nav{
-  width: 100%;
-}
+  .contact-kontaktformular-div {
+    padding-top: 20px;
+  }
+
+  .nav-nav {
+    width: 100%;
+  }
+
   .nav-nav ul li a {
     padding: 5px;
     display: inline-block;
     color: white;
     text-decoration: none;
-}
+  }
+
   .main-navigation {
     position: fixed;
     padding: 5px;
@@ -2815,16 +2832,26 @@ li > a:only-child:after { content: ''; }
   }
 }
 
-
+@media (max-width:570px) {
+  .textarea {
+    width: 300px;
+  }
+}
 
 
 @media (max-width:480px) {
+  .contact-form-div {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
   .nav-nav ul li a {
     padding: 6px;
     display: inline-block;
     color: white;
     text-decoration: none;
-}
+  }
+
   .clean1 {
     flex-direction: column;
   }
@@ -2834,11 +2861,12 @@ li > a:only-child:after { content: ''; }
     height: 120px;
   }
 
-  .main-navigation{
-    
+  .main-navigation {
+
     right: 15px !important;
 
   }
+
   .a-nav {
 
     font-size: 14px !important;
@@ -2891,9 +2919,9 @@ li > a:only-child:after { content: ''; }
     position: absolute !important;
     margin: 0 !important;
     padding: 0 !important;
-    top: 25px;
+    top: 60px;
     left: 16px;
-
+    z-index: 999;
   }
 
   .dropdown1 summary {
@@ -3218,9 +3246,9 @@ li > a:only-child:after { content: ''; }
     position: absolute !important;
     margin: 0 !important;
     padding: 0 !important;
-    top: 25px;
+    top: 60px;
     left: 16px;
-
+    z-index: 999 !important;
   }
 
   .dropdown1 summary {

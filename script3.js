@@ -1,3 +1,47 @@
+let selectedLanguage = "de";
+
+async function init() {
+  await includeHTML();
+  setSelectedLanguage();
+  translate();
+}
+
+function translate() {
+  if (selectedLanguage == "de") {
+    german();
+  }
+  if (selectedLanguage == "en") {
+    america();
+  }
+  if (selectedLanguage == "pl") {
+    polen();
+  }
+  if (selectedLanguage == "tk") {
+    turk();
+  }
+  if (selectedLanguage == "ar") {
+    arabic();
+  }
+  if (selectedLanguage == "sp") {
+    spain();
+  }
+  if (selectedLanguage == "fr") {
+    france();
+  }
+}
+
+function setSelectedLanguage() {
+  selectedLanguage = localStorage.getItem("selectedLanguage") || "de";
+
+
+}
+ 
+function saveSelectedLanguage(language) {
+  selectedLanguage = language;
+  localStorage.setItem("selectedLanguage", selectedLanguage)
+}
+
+
 async function includeHTML() {
     let includeElements = document.querySelectorAll('[w3-include-html]');
     for (let i = 0; i < includeElements.length; i++) {

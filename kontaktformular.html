@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body onload="includeHTML()">
+<body onload="init()">
 
     <div w3-include-html="./templates/header.html"></div>
 
@@ -18,26 +18,34 @@
         <div class="contact-kontaktformular-div">
             <div class="contact-kontaktformular-right">
 
-                <a class="a" href="#iframeid"><div class="contact-right-divs1">
-                    <img src="./img/icons8-marker-100 (1).png" alt="">
-                    <h3 id="language-standort">STANDORT</h3>
-                    <span>Adresse Adresse Adresse</span>
-                </div></a>
-                <a class="a" href="tel:+49 173 9446658"><div class="contact-right-divs2">
-                    <img src="./img/phone-2-128 (1).png" alt="">
-                    <h3 id="language-nummer">TELEFONNUMMER</h3>
-                    <span>+49 173 9446658</span>
-                </div></a>
-                <a class="a" href="mailto:info@service-isc.com"><div class="contact-right-divs2">
-                    <img src="./img/mail-128.png" alt="">
-                    <h3 id="language-email">EMAIL</h3>
-                    <h3>info@service-isc.com</h3>
-                </div></a>
-                <a class="a" href="./Galerie.html"><div class="contact-right-divs1">
-                    <img src="./img/website.png" alt="">
-                    <h3 id="language-sozial">SOZIALE MEDIEN</h3>
-                    <span></span>
-                </div></a>
+                <a class="a" href="#iframeid">
+                    <div class="contact-right-divs1">
+                        <img src="./img/icons8-marker-100 (1).png" alt="">
+                        <h3 id="language-standort">STANDORT</h3>
+                        <span>Adresse Adresse Adresse</span>
+                    </div>
+                </a>
+                <a class="a" href="tel:+49 173 9446658">
+                    <div class="contact-right-divs2">
+                        <img src="./img/phone-2-128 (1).png" alt="">
+                        <h3 id="language-nummer">TELEFONNUMMER</h3>
+                        <span>+49 173 9446658</span>
+                    </div>
+                </a>
+                <a class="a" href="mailto:info@service-isc.com">
+                    <div class="contact-right-divs2">
+                        <img src="./img/mail-128.png" alt="">
+                        <h3 id="language-email">EMAIL</h3>
+                        <h3>info@service-isc.com</h3>
+                    </div>
+                </a>
+                <a class="a" href="./Galerie.html">
+                    <div class="contact-right-divs1">
+                        <img src="./img/website.png" alt="">
+                        <h3 id="language-sozial">SOZIALE MEDIEN</h3>
+                        <span></span>
+                    </div>
+                </a>
             </div>
             <div class="contact-form-div">
                 <form class="contact-form" action="https://nick-pavlov.developerakademie.net/ISC/php.php" method="post">
@@ -47,14 +55,17 @@
                     <div class="textarea-button">
                         <textarea class="textarea" name="message" placeholder="Message" type="text" required></textarea>
 
-<button class="btn">KONTAKT</button>
+                        <button class="btn">KONTAKT</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div  class="iframee">
-        <iframe id="iframeid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.9481264676947!2d13.375129177305286!3d52.516277836504216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburger%20Tor!5e0!3m2!1sde!2sde!4v1698698648730!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="iframee">
+        <iframe id="iframeid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.9481264676947!2d13.375129177305286!3d52.516277836504216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburger%20Tor!5e0!3m2!1sde!2sde!4v1698698648730!5m2!1sde!2sde"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 
