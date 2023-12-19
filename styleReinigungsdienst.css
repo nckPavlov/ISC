@@ -1,0 +1,146 @@
+.container-m1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: linear-gradient(rgb(111, 111, 111), rgb(69, 68, 68));
+    color: rgb(255, 255, 255);
+}
+
+.h1-m1 {
+    margin-top: 50px;
+    font-size: 35px;
+    font-size: 32px;
+    border-bottom: 5px solid #014418;
+}
+
+.text-m1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 17px;
+    text-shadow: 8px 8px 8px rgb(20, 20, 20);
+    font-weight: bold;
+}
+
+.text-container-m1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99vw;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    text-shadow: 8px 8px 8px rgb(20, 20, 20);
+}
+
+.div-container-m1{
+    width: 400px;
+    padding: 30px;
+    border: 3px solid #014418;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.p1-m1 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.h1-slider-m2{
+    font-size: 22px;
+    
+}
+
+.p-slider-m2{
+    font-size: 45px;
+    text-shadow: 8px 8px 8px rgb(20, 20, 20);
+}
+
+.content-m2{
+    padding: 20px;
+    border: 3px solid #014418;
+    border-radius: 10px;
+}
+
+
+/* Silder */
+.slider-m2 {
+    display: flex;
+    overflow: hidden;
+    width: 99vw;
+    text-align: center;
+    margin-top: 100px;
+    
+  }
+  
+  .slide-m2 {
+    width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+    transition: transform 1s ease-in-out;
+    display: flex;
+    justify-content: center; 
+    
+    
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Animation */
+  @keyframes slideAnimation {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+  }
+  
+  /* Apply animation to .slider-m2 */
+  .slider-m2 .slide-m2 {
+    animation: slideAnimation 30s linear infinite;
+}
+/* Silder */
+
+
+@media (max-width:1600px) {
+    .text-container-m1{
+        display: flex;
+        flex-wrap: wrap !important;
+        width: 98vw;
+    }
+}
+
+@media (max-width:1428px) {
+    .div-container-m1 {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:460px) {
+    .h1-m1 {
+        font-size: 26px;
+    }
+
+    .h3-m1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:340px) {
+    .h1-m1 {
+        font-size: 22px;
+    }
+
+    
+}

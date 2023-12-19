@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -109,18 +110,18 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: sticky;
   top: 0;
   padding-top: 30px;
   padding-bottom: 5px;
   width: 100%;
-
-  z-index: 999;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
   gap: 50px;
 }
 
-.header2 {
-}
 
 .header-div {
   display: flex;
@@ -379,10 +380,9 @@ h1 {
 
 
 .cleaner11 {
-  width: 1000px;
-  height: 500px;
+  width: 600px;
+  height: 300px;
   object-fit: cover;
-  padding-bottom: 100px;
 }
 
 
@@ -524,7 +524,7 @@ h1 {
 
 
 .btn {
-  margin-top: 24px !important;
+  margin-top: 10px !important;
   display: inline-block !important;
   outline: none !important;
   cursor: pointer !important;
@@ -591,29 +591,17 @@ h1 {
   object-fit: cover;
   height: 350px;
   width: 300px;
-  border-radius: 10% !important;
-
- 
+  border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 .info-img1{
   object-fit: contain;
   height: 350px;
   width: 300px;
+  border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  cursor: pointer;
-  transition: transform .2s;
-  border-radius: 10% !important;
-
-
-}
-.info-img1:hover{
-  transform: scale(1.2);
-  border-radius: 10% !important;
-
 }
 
 .info h2 {
@@ -637,14 +625,6 @@ h1 {
   padding-top: 32px;
 }
 
-
-
-.img-leitung{
-  display: inline-grid;
-  overflow: hidden;
-  border-radius: 10% !important;
-
-}
 
 
 
@@ -720,16 +700,9 @@ h1 {
   align-items: center;
   padding: 5px;
   border-radius: 5px;
-width: 100%;
-z-index: 9999;
-
-}
-#nav{
-  transition: all 225ms ease-in-out;
-}
-#navbar{
-  transition: all 225ms ease-in-out;
-
+  top: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 .nav-nav ul {
@@ -746,7 +719,7 @@ z-index: 9999;
   display:inline-block;
 }
 
-li > a:after { content: ' »'; }
+li > a:after { content: ' » '; }
 
 li > a:only-child:after { content: ''; }
 
@@ -1195,7 +1168,7 @@ li > a:only-child:after { content: ''; }
 
 
 
-.visionlösung {
+.visionlÃ¶sung {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1232,18 +1205,16 @@ li > a:only-child:after { content: ''; }
 }
 
 
-.headline-visionlösung {
+.headline-visionlÃ¶sung {
   font-size: 1.5em;
 }
 
 
 .galerie-div {
   background-image: linear-gradient(rgb(135, 135, 135), rgb(55, 55, 55));
-
   background-size: cover;
   width: 100vw;
   height: 100vh;
-
 }
 
 .galerie {
@@ -1594,7 +1565,7 @@ li > a:only-child:after { content: ''; }
 
 .contact-kontaktformular {
   background: url('./img/blackboard-business-woman-professional-suit-elegant-female-1454051-pxhere.com.jpg') no-repeat center top/cover;
-  width: 100vw;
+  
   height: 100vh;
 }
 
@@ -1899,7 +1870,6 @@ li > a:only-child:after { content: ''; }
   }
 
   .dropdown1 ul {
-    z-index: 99999;
     font-size: 16px !important;
     margin-left: calc((var(--dropdown-width) / 4) * -1) !important;
     padding: 0 !important;
@@ -1927,14 +1897,6 @@ li > a:only-child:after { content: ''; }
     border-style: solid;
     border-width: 0 1px 1px 1px;
   }
-
-
-.info-text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 
   /* Close the dropdown with outside clicks */
@@ -2195,7 +2157,6 @@ li > a:only-child:after { content: ''; }
 
   .galerie-div {
     background-image: linear-gradient(rgb(135, 135, 135), rgb(55, 55, 55));
-
     background-size: cover;
     width: 100vw;
   }
@@ -2511,15 +2472,6 @@ li > a:only-child:after { content: ''; }
 }
 
 @media (max-width:768px) {
-
-  .galerie-div {
-    background-image: linear-gradient(rgb(135, 135, 135), rgb(55, 55, 55));
-  
-    background-size: cover;
-    width: 100vw;
-    height: auto !important;
-  
-  }
   .clean1 {
     flex-direction: column;
   }
@@ -2868,7 +2820,7 @@ li > a:only-child:after { content: ''; }
 
 @media (max-width:480px) {
   .nav-nav ul li a {
-    padding: 5px;
+    padding: 6px;
     display: inline-block;
     color: white;
     text-decoration: none;
