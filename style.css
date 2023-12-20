@@ -1515,6 +1515,7 @@ li>a:only-child:after {
   flex-wrap: wrap !important;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .contact-form {}
@@ -1767,6 +1768,18 @@ li>a:only-child:after {
   border-width: 0 10px 10px 10px;
   border-color: transparent transparent var(--dropdown-background) transparent;
 }
+
+
+
+/* Impressum */
+
+.container-impressum{
+  background-image: linear-gradient(rgb(111, 111, 111), rgb(89, 88, 88));
+  color: rgb(255, 255, 255);
+  padding: 100px;
+}
+
+/* Impressum */
 
 
 /* Close the dropdown with outside clicks */
@@ -2139,7 +2152,18 @@ li>a:only-child:after {
   }
 }
 
+@media (max-width:600px) {
+  .galerie-points img {
+    padding-left: 100px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    width: 50px;
+  }
+}
 
+
+  
 
 @media (max-width:992px) {
   .contact-kontaktformular-div {
@@ -2489,6 +2513,10 @@ li>a:only-child:after {
 }
 
 @media (max-width:768px) {
+  .contact-form input {
+    margin-left: 30px;
+  }
+
   .clean1 {
     flex-direction: column;
   }
@@ -2835,6 +2863,10 @@ li>a:only-child:after {
 @media (max-width:570px) {
   .textarea {
     width: 300px;
+  }
+
+  .container-impressum{
+    padding: 30px;
   }
 }
 
@@ -3215,7 +3247,11 @@ li>a:only-child:after {
   }
 }
 
-
+@media (max-width:355px){
+  .contact-form input{
+    margin-left: 5px;
+  }
+}
 
 
 
